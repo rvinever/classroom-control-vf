@@ -47,12 +47,8 @@ node default {
   file { '/etc/motd':
   ensure  => 'file',
   content => 'this is the test from git',
-  #ctime   => '2016-09-27 17:31:38 +0000',
   group   => '0',
   mode    => '0755',
-  #mtime   => '2016-09-27 17:31:38 +0000',
   owner   => '0',
-  type    => 'file',
-  
-}
+  }
 }
