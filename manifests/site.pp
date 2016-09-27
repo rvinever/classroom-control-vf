@@ -51,4 +51,9 @@ node default {
   mode    => '0755',
   owner   => '0',
   }
+  
+  exec { "cowsay 'Welcome to ${::fqdn}!' > /etc/motd" :
+  path => '/usr/bin',
+  creates => '/etc/motd',
+  }
 }
