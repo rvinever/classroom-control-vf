@@ -1,4 +1,5 @@
 
 node default {
- include nginx
+# include nginx
+include wrappers::epel
  }
