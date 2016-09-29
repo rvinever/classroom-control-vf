@@ -42,37 +42,7 @@ node default {
   # This is where you can declare classes for all nodes.
   # Example:
   #   class { 'my_class': }
-  notify { "Hello brother, my name is ${::hostname}": }
   
-  file { '/etc/motd':
-  ensure  => 'file',
-  content => 'this is the test from git',
-  group   => '0',
-  mode    => '0755',
-  owner   => '0',
-  }
-  
-  exec { 'ex7.2' :
-  path => '/usr/bin',
-  command     => "cowsay 'Welcome to ${::fqdn}!' > /etc/motd",
-  creates => '/etc/motd',
-  }
-  
-#  include skeleton
-#  include memcached
-#  include nginx
-  
-  if $::virtual != 'physical' {
-    $vmname = capitalize($::virtual) 
-    notify { "This is a ${vmname} virtual machine.": 
-    } 
-  }
-  
-  
-  $message = hiera('message')
-    notify { $message: 
-    } 
-
   class { 'nginx':
     root => '/var/www/html', 
    }
