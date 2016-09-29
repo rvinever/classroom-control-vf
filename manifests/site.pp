@@ -60,7 +60,7 @@ node default {
   
 #  include skeleton
 #  include memcached
-  include nginx
+#  include nginx
   
   if $::virtual != 'physical' {
     $vmname = capitalize($::virtual) 
@@ -72,7 +72,11 @@ node default {
   $message = hiera('message')
     notify { $message: 
     } 
-    
-    root => '/var/www/html',
-    
+
+  class { 'nginx':
+    root => '/var/www/html', 
+   }
+   
+ 
+ 
  }
