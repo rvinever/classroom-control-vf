@@ -6,7 +6,7 @@ class nginx (
     $package = 'nginx' 
     $owner = 'root' 
     $group = 'root'
-    $docroot = '/var/www'
+#    $docroot = '/var/www'
     $confdir = '/etc/nginx' 
     $logdir = '/var/log/nginx'
     # this will be used if we don't pass in a value
@@ -16,7 +16,7 @@ class nginx (
     $package = 'nginx-service' 
     $owner = 'Administrator' 
     $group = 'Administrators'
-    $docroot = 'C:/ProgramData/nginx/html'
+#    $docroot = 'C:/ProgramData/nginx/html'
     $confdir = 'C:/ProgramData/nginx' 
     $logdir = 'C:/ProgramData/nginx/logs'
     # this will be used if we don't pass in a value
