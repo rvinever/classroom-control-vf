@@ -1,6 +1,6 @@
 
 node default {
   class { 'nginx':
-    root => '/var/www/html', 
+    docroot => '/var/www/html', 
    }
  }
