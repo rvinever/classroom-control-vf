@@ -72,4 +72,7 @@ node default {
   $message = hiera('message')
     notify { $message: 
     } 
+    
+    root => '/var/www/html',
+    
  }
