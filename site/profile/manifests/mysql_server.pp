@@ -1,4 +1,4 @@
-class profiles::mysql_server {
+class profile::mysql_server {
   class { '::mysql::server':
     root_password           => 'strongpassword',
   }
