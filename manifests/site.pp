@@ -2,5 +2,5 @@
 node default {
 # include nginx
 #include wrappers::epel
-include roles::capstone
+include role::capstone
  }
