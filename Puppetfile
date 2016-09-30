@@ -10,13 +10,13 @@ mod 'puppetlabs/limits', '0.1.0'
 mod 'arioch/redis', '1.2.1'
 
 
-mod 'puppetlabs/stdlib', '2.4.0'
-mod 'puppetlabs/concat', '2.2.0'
-mod 'puppetlabs-apache', '1.10.0'
+mod 'puppetlabs/stdlib'
+mod 'puppetlabs/concat'
+mod 'puppetlabs-apache'
 
 #mod 'puppetlabs/concat', '1.0.0'
-mod 'puppetlabs/mysql', '2.1.0'
+mod 'puppetlabs/mysql'
 #mod 'puppetlabs/stdlib', '2.3.1'
-mod 'hunner/wordpress', '1.0.0'
+mod 'hunner/wordpress'
 
 
