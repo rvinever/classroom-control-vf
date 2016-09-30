@@ -1,8 +1,6 @@
 class profiles::mysql_server {
-class { '::mysql::server':
-  root_password           => 'strongpassword',
-  remove_default_accounts => true,
-  override_options        => $override_options
-}
- include mysql::bindings::php
+  class { '::mysql::server':
+    root_password           => 'strongpassword',
+  }
+  include mysql::bindings::php
 }
