@@ -7,6 +7,6 @@ class profile::apache {
 
 #  include ::apache::mod::php
 
-class { ::apache : }
+class { '::apache' : }
 
 }
