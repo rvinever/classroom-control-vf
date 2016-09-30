@@ -8,9 +8,15 @@ mod 'vcsrepo',
 mod 'stahnma/epel', '1.2.2' 
 mod 'puppetlabs/limits', '0.1.0' 
 mod 'arioch/redis', '1.2.1'
-#mod 'puppetlabs-mysql', '5.0.0'
 
-mod 'puppetlabs/concat', '1.0.0'
+
+mod 'puppetlabs/stdlib', '2.4.0'
+mod 'puppetlabs/concat', '1.1.1'
+mod 'puppetlabs-apache', '5.0.0'
+
+#mod 'puppetlabs/concat', '1.0.0'
 mod 'puppetlabs/mysql', '2.1.0'
-mod 'puppetlabs/stdlib', '2.3.1'
+#mod 'puppetlabs/stdlib', '2.3.1'
 mod 'hunner/wordpress', '1.0.0'
+
+
