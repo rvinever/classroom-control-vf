@@ -5,5 +5,5 @@ class profile::apache {
   docroot => '/var/www/vhost',
   }
 
-  include ::apache::mod::php
+#  include ::apache::mod::php
 }
