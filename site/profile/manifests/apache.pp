@@ -1,4 +1,4 @@
-class profiles::apache {
+class profile::apache {
   
   apache::vhost { '::fqdn':
   port    => '80',
