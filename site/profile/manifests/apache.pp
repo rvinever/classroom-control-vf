@@ -1,3 +1,3 @@
 class profiles::apache {
-class { 'apache': }
+  include ::apache
 }
