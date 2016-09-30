@@ -12,7 +12,7 @@ mod 'arioch/redis', '1.2.1'
 
 mod 'puppetlabs/stdlib', '2.4.0'
 mod 'puppetlabs/concat', '1.1.1'
-mod 'puppetlabs-apache', '5.0.0'
+mod 'puppetlabs-apache', '1.10.0'
 
 #mod 'puppetlabs/concat', '1.0.0'
 mod 'puppetlabs/mysql', '2.1.0'
