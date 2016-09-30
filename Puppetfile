@@ -12,7 +12,7 @@ mod 'vcsrepo',
 
 #mod 'puppetlabs/stdlib'
 #mod 'puppetlabs/concat'
-#mod 'puppetlabs-apache'
+mod 'puppetlabs-apache'
 
 #mod 'puppetlabs/concat', '1.0.0'
 #mod 'puppetlabs/mysql'
